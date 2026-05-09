@@ -3,18 +3,21 @@ name: Cypress Tests
 on:
   push:
     branches:
+      - master
       - main
 
   pull_request:
     branches:
+      - master
       - main
 
 jobs:
   cypress-run:
+
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout
+      - name: Checkout repository
         uses: actions/checkout@v4
 
       - name: Setup Node
@@ -25,5 +28,5 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Run Cypress
+      - name: Run Cypress tests
         run: npx cypress run
