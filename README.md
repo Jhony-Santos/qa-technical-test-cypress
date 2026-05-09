@@ -1,5 +1,8 @@
 # QA Technical Test - Cypress
 
+![Cypress Tests](https://github.com/Jhony-Santos/qa-technical-test-cypress/actions/workflows/cypress.yml/badge.svg)
+
+
 Projeto de automação E2E desenvolvido com Cypress para validação dos fluxos críticos do SauceDemo.
 
 ---
