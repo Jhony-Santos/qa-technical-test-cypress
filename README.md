@@ -6,6 +6,12 @@ Projeto de automação E2E desenvolvido com Cypress para validação dos fluxos 
 
 ---
 
+# Objetivo
+
+O objetivo deste projeto é validar os principais fluxos críticos de um e-commerce utilizando automação E2E com Cypress, aplicando boas práticas de organização, reutilização de código, documentação funcional e integração contínua.
+
+---
+
 # Site escolhido
 
 https://www.saucedemo.com/
@@ -182,6 +188,22 @@ Sistema deve exibir mensagem de validação.
 
 ---
 
+# Cenários BDD
+
+Os cenários escritos em Gherkin estão disponíveis em:
+
+```txt
+docs/gherkin
+```
+
+Arquivos:
+
+- login.feature
+- cart.feature
+- checkout.feature
+
+---
+
 # Estimativa de Tempo
 
 | Atividade | Tempo |
@@ -218,11 +240,28 @@ Os fluxos escolhidos cobrem o ciclo principal do e-commerce:
 # Estrutura do Projeto
 
 ```bash
-cypress/
- ├── e2e/
- ├── fixtures/
- ├── pages/
- └── support/
+qa-technical-test-cypress/
+│
+├── .github/
+│   └── workflows/
+│       └── cypress.yml
+│
+├── cypress/
+│   ├── e2e/
+│   ├── fixtures/
+│   ├── pages/
+│   └── support/
+│
+├── docs/
+│   └── gherkin/
+│       ├── login.feature
+│       ├── cart.feature
+│       └── checkout.feature
+│
+├── README.md
+├── cypress.config.js
+├── package.json
+└── .gitignore
 ```
 
 ---
@@ -234,6 +273,8 @@ cypress/
 - Fixtures
 - Reutilização de código
 - Separação de responsabilidades
+- Estrutura baseada em Page Objects
+- Documentação funcional em Gherkin
 
 ---
 
